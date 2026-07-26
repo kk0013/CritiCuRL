@@ -70,7 +70,7 @@ python -m verl.trainer.main_grpo_all \
     trainer.nnodes=1
 ```
 
-Each epoch first runs the **offline rollout** over the whole dataset (multi-rollout scoring of all step-truncated variants, critical-step selection into `key.json`, diagnostics in `<rollout_data_dir>/diff_metrics.jsonl`), then runs the **online update** (criticality-ordered curriculum GRPO on the selected variants). Repeat the training over the difficulty stages of the curriculum, advancing to the next stage once the reward stabilizes.
+Each epoch first runs the **offline rollout** (multi-rollout scoring of all step-truncated variants, critical-step selection into `key.json`, diagnostics in `<rollout_data_dir>/diff_metrics.jsonl`), then runs the **online update** (criticality-ordered curriculum GRPO on the selected variants). Repeat the training over the difficulty stages of the curriculum, advancing to the next stage once the reward stabilizes.
 
 Key method-specific options in `verl/trainer/config/grpo_trainer.yaml`:
 
@@ -87,7 +87,7 @@ Key method-specific options in `verl/trainer/config/grpo_trainer.yaml`:
 
 ### 6. Evaluation
 
-We evaluate on MathVista, MathVision, MathVerse, DynaMath, and ChartQA using a hierarchical soft-matching protocol for both final answers and critical reasoning steps (see the paper for details).
+We evaluate on MathVista, MathVision, MathVerse, ChartQA, LogicVista, ScienceQA, MMMU, MMStar and MME<sub>_sum</sub> (see the paper for details).
 
 ## Citation
 
@@ -98,7 +98,7 @@ If you find this work useful, please cite:
   title  = {Offline-Online Curriculum RL for Multimodal Reasoning},
   author = {Deng, Wendi and Du, Hang and Nan, Guoshun and Tian, Haokun and Yu, Jiaqi and Cao, Xinlei and Li, Jiale and Chen, Jingfeng and Deng, Ling and Li, Ting and Yang, Hao and Liu, Jun and Jiang, Xudong and Leng, Sicong},
   year   = {2026},
-  url    = {https://openreview.net/forum?id=3lKAoqNXle}
+  url    = {}
 }
 ```
 
