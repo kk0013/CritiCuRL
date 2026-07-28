@@ -1,8 +1,8 @@
-# O²-CritiCuRL: Offline-Online Curriculum RL for Multimodal Reasoning
+# Offline-Online Curriculum RL for Multimodal Reasoning
 
 Official implementation of **O²-CritiCuRL**, a curriculum reinforcement learning framework that introduces critical-step awareness through an iterative **offline–online** paradigm: the offline stage performs multi-rollout analysis over step-annotated trajectories to identify critical reasoning steps, and the online stage applies progressive step-level GRPO training on the distilled data.
 
-📄 **Paper**: [Offline-Online Curriculum RL for Multimodal Reasoning](https://)
+📄 **Paper**: [Offline-Online Curriculum RL for Multimodal Reasoning](https://arxiv.org/pdf/2607.23700)
 
 This codebase is built on [verl](https://github.com/volcengine/verl). 
 
@@ -98,7 +98,7 @@ If you find this work useful, please cite:
   title  = {Offline-Online Curriculum RL for Multimodal Reasoning},
   author = {Deng, Wendi and Du, Hang and Nan, Guoshun and Tian, Haokun and Yu, Jiaqi and Cao, Xinlei and Li, Jiale and Chen, Jingfeng and Deng, Ling and Li, Ting and Yang, Hao and Liu, Jun and Jiang, Xudong and Leng, Sicong},
   year   = {2026},
-  url    = {}
+  url    = {https://arxiv.org/pdf/2607.23700}
 }
 ```
 
